@@ -18,38 +18,38 @@ from pyrogram import filters
 
 load_dotenv()
 
-API_ID = int(getenv("API_ID", ""))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID", "20397642"))
+API_HASH = getenv("API_HASH", "26e119ca056fd848986cf54dfcaccd59")
 
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN", "7666832423:AAHRx7n0tCdNBzo6_WZ-932yEE8vjmxvNyE")
 
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://shibu07120:C4yYrkmTpsY2n9JT@cluster1.uxch0tb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1")
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", "900"))
 
 SONG_DOWNLOAD_DURATION = int(getenv("SONG_DOWNLOAD_DURATION_LIMIT", "180"))
 
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002821493163"))
 
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "˹𝐍ᴏʙᴏᴅʏ ꭙ мᴜѕɪᴄ𝐗 [🔮]")
 
-OWNER_ID = int(getenv("OWNER_ID", None))
+OWNER_ID = int(getenv("OWNER_ID", "5947904339"))
 
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
-BOT_ID = getenv("BOT_ID")
+BOT_ID = getenv("BOT_ID", "7666832423")
 
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 
-UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/TheTeamAlexa/AlexaMusic")
+UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://t.me/chilling_friends")
 
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/Alexa_BotUpdates")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/chilling_friends")
 
-SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/Alexa_Help")
+SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/chilling_friends/4")
 
 AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "False")
 
@@ -67,13 +67,13 @@ YOUTUBE_DOWNLOAD_EDIT_SLEEP = int(getenv("YOUTUBE_EDIT_SLEEP", "3"))
 
 TELEGRAM_DOWNLOAD_EDIT_SLEEP = int(getenv("TELEGRAM_EDIT_SLEEP", "5"))
 
-GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/TheTeamAlexa/AlexaMusic")
+GITHUB_REPO = getenv("GITHUB_REPO", "https://t.me/chilling_friends")
 
-SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", None)
+SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", "d71801fcf9ae48b8b0a5b8ba8722bdcb")
 
-SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", None)
+SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", "4be2aedc5b134a10abe297e48b02e367")
 
-VIDEO_STREAM_LIMIT = int(getenv("VIDEO_STREAM_LIMIT", "2"))
+VIDEO_STREAM_LIMIT = int(getenv("VIDEO_STREAM_LIMIT", "1"))
 
 SERVER_PLAYLIST_LIMIT = int(getenv("SERVER_PLAYLIST_LIMIT", "50"))
 
@@ -86,10 +86,10 @@ TG_AUDIO_FILESIZE_LIMIT = int(getenv("TG_AUDIO_FILESIZE_LIMIT", "104857600"))
 TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", "1073741824"))
 # https://www.gbmb.org/mb-to-bytes
 
-COOKIES = getenv("COOKIES", None)
+COOKIES = getenv("COOKIES", "https://batbin.me/striariaceae")
 # https://batbin.me
 
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = getenv("STRING1", "BQE3PkoACbx-aqfutGDk2mo0DJxyFoxRxLyHi6d4hgXSr5cpSG5Kqz11PfE8GhHbc6GmJAtCW2Q0z0G94Imnwgj6_73kPyV5CIG9tMlsivBmRcCsPnrmXij1myxtERM5FrJAH3G9oSQf5GzdFPhf7p1cXW9exkXY_WChLI906mgRY6f1I84ktVKOwhvrenEOygC-bhXiP6JIQ704a8tf2pTt8vsxs6YrQozQblJshY4ZwKCDDiF6JJfdnK79RUAaMrxFkqGr1w4bitGkK7dMUOXeIoJOAmKX7lvXCGqgeF5tGvUIjcq2tw17z1EX-wmsT2NjxDuItOuiAvjd9d_K0ikIfh0NEAAAAAHKnpV4AA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
@@ -108,7 +108,7 @@ clean = {}
 autoclean = []
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://telegra.ph/file/d593c6064ff7657d0c714.jpg"
+    "START_IMG_URL", "https://graph.org/file/2b5ed3250e31925ed2a45-aec17e2803d9c0188e.jpg"
 )
 
 PING_IMG_URL = getenv(
