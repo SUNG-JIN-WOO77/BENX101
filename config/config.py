@@ -31,7 +31,7 @@ SONG_DOWNLOAD_DURATION = int(getenv("SONG_DOWNLOAD_DURATION_LIMIT", "180"))
 
 LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002821493163"))
 
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "˹𝐍ᴏʙᴏᴅʏ ꭙ мᴜѕɪᴄ𝐗 [🔮]")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", " ˹𝐍ᴏʙᴏᴅʏ ꭙ мᴜѕɪᴄ𝐗 [🔮]˼ ")
 
 OWNER_ID = int(getenv("OWNER_ID", "5947904339"))
 
