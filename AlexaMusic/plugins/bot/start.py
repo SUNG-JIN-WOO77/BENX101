@@ -281,7 +281,7 @@ async def welcome(client, message: Message):
 async def alive(client, message: Message):
     await message.reply_photo(
         photo="https://graph.org/file/8ee7b11cbd7247d3da30e-89d29ea3b7ad64322a.jpg",
-        caption=f"""━━━━━━━━━━━━━━━━━━━━━━━━\n\n✪ ʜᴇʟʟᴏ, ɴᴏʙᴏᴅʏ ᴍᴜsɪᴄx ɪs ᴡᴏʀᴋɪɴɢ ᴀɴᴅ ғᴜɴᴄᴛɪᴏɴɪɴɢ ᴘʀᴏᴘᴇʀʟʏ\n✪ ᴛʜᴀɴᴋs ᴛᴏ ᴍʏ ᴏᴡɴᴇʀ ɴᴏʙᴏᴅʏ ᴋɴᴏᴡs 🌼 ..\n\n┏━━━━━━━━━━━━━━━━━┓\n┣★ ᴏᴡɴᴇʀ    : [𝐍ᴏʙᴏᴅʏ 𝐊ɴᴏᴡs ✘](https://t.me/nobody_knows_791)\n┣★ ᴜᴘᴅᴀᴛᴇs › : [𝐂ʜɪʟʟɪɴɢ 𝐅ʀɪᴇɴᴅs 💗🌖](https://t.me/dekh_kya_rha_kar_join)┓\n┣★ ʀᴇᴘᴏ › : [ᴄʜᴀɴɴᴇʟ](https://t.me/chilling_friends)\n┗━━━━━━━━━━━━━━━━━┛\n\n💞 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ\nᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](https://t.me/Nobody_knows_791) ᴍᴀᴋᴇ sᴜʀᴇ ᴛᴏ sᴛᴀʀ ᴏᴜʀ ᴘʀᴏᴊᴇᴄᴛ ...\n\n━━━━━━━━━━━━━━━━━━━━━━━━""",
+        caption=f"""━━━━━━━━━━━━━━━━━━━━━━━━\n\n✪ ʜᴇʟʟᴏ, ɴᴏʙᴏᴅʏ ᴍᴜsɪᴄx ɪs ᴡᴏʀᴋɪɴɢ ᴀɴᴅ ғᴜɴᴄᴛɪᴏɴɪɴɢ ᴘʀᴏᴘᴇʀʟʏ\n✪ ᴛʜᴀɴᴋs ᴛᴏ ᴍʏ ᴏᴡɴᴇʀ ɴᴏʙᴏᴅʏ ᴋɴᴏᴡs 🌼 ..\n\n┏━━━━━━━━━━━━━━━━━┓\n┣★ ᴏᴡɴᴇʀ    : [𝐍ᴏʙᴏᴅʏ 𝐊ɴᴏᴡs ✘](https://t.me/nobody_knows_791)\n┣★ ᴜᴘᴅᴀᴛᴇs › : [𝐂ʜɪʟʟɪɴɢ 𝐅ʀɪᴇɴᴅs 💗🌖](https://t.me/dekh_kya_rha_kar_join)┓\n┣★ sᴜᴘᴘᴏʀᴛ › : [ᴄʜᴀɴɴᴇʟ](https://t.me/chilling_friends)\n┗━━━━━━━━━━━━━━━━━┛\n\n💞 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ\nᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](https://t.me/Nobody_knows_791) ᴍᴀᴋᴇ sᴜʀᴇ ᴛᴏ sᴛᴀʀ ᴏᴜʀ ᴘʀᴏᴊᴇᴄᴛ ...\n\n━━━━━━━━━━━━━━━━━━━━━━━━""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("𝐂ʜɪʟʟɪɴɢ 𝐅ʀɪᴇɴᴅs 💗🌖", url=config.SUPPORT_GROUP)]]
         ),

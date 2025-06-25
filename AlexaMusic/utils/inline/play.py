@@ -51,16 +51,16 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
                 text=_["PL_B_2"],
                 callback_data=f"add_playlist {videoid}",
             ),
-            InlineKeyboardButton(text="𝖮𝗐𝗇𝖾𝗋", url="https://t.me/Nobody_knows_791"),
+            InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url="https://t.me/Nobody_knows_791"),
         ],
         [
             InlineKeyboardButton(
                 text=_["PL_B_3"],
                 callback_data=f"PanelMarkup {videoid}|{chat_id}",
             ),
-            InlineKeyboardButton(text="𝖲𝗎𝗉𝗉𝗈𝗋𝗍 💬", url=SUPPORT_GROUP),
+            InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ 💬", url=SUPPORT_GROUP),
         ],
-        [InlineKeyboardButton(text="𝖴𝗉𝖽𝖺𝗍𝖾𝗌 📢", url=SUPPORT_CHANNEL)],
+        [InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇs📢", url=SUPPORT_CHANNEL)],
     ]
 
 
@@ -78,14 +78,14 @@ def telegram_markup_timer(_, videoid, chat_id, played, dur):
                 text=_["PL_B_2"],
                 callback_data=f"add_playlist {videoid}",
             ),
-            InlineKeyboardButton(text="𝖮𝗐𝗇𝖾𝗋", url="https://t.me/Jankari_Ki_Duniya"),
+            InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url="https://t.me/Nobody_knows_791"),
         ],
         [
             InlineKeyboardButton(
                 text=_["PL_B_3"],
                 callback_data=f"PanelMarkup None|{chat_id}",
             ),
-            InlineKeyboardButton(text="𝖲𝗎𝗉𝗉𝗈𝗋𝗍 💬", url=SUPPORT_GROUP),
+            InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ💬", url=SUPPORT_GROUP),
         ],
     ]
 
@@ -100,14 +100,14 @@ def stream_markup(_, videoid, chat_id):
                 text=_["PL_B_2"],
                 callback_data=f"add_playlist {videoid}",
             ),
-            InlineKeyboardButton(text="𝖮𝗐𝗇𝖾𝗋", url="https://t.me/Jankari_Ki_Duniya"),
+            InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url="https://t.me/Nobody_knows_791"),
         ],
         [
             InlineKeyboardButton(
                 text=_["PL_B_3"],
                 callback_data=f"PanelMarkup None|{chat_id}",
             ),
-            InlineKeyboardButton(text="𝖲𝗎𝗉𝗉𝗈𝗋𝗍 💬", url=SUPPORT_GROUP),
+            InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ💬", url=SUPPORT_GROUP),
         ],
     ]
 
@@ -126,7 +126,7 @@ def telegram_markup(_, chat_id):
 
 ## By Anon
 close_keyboard = InlineKeyboardMarkup(
-    [[InlineKeyboardButton(text="𝖢𝗅𝗈𝗌𝖾", callback_data="close")]]
+    [[InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="close")]]
 )
 
 ## Search Query Inline
@@ -312,5 +312,5 @@ def queue_markup(_, videoid, chat_id):
             InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
             InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
         ],
-        [InlineKeyboardButton(text="𝖢𝗅𝗈𝗌𝖾", callback_data=f"ADMIN CloseA|{chat_id}")],
+        [InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data=f"ADMIN CloseA|{chat_id}")],
     ]
