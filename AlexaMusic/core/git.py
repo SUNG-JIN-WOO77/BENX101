@@ -11,6 +11,7 @@ as you want or you can collabe if you have new ideas.
 
 
 import asyncio
+import os
 import shlex
 from typing import Tuple
 
@@ -18,7 +19,6 @@ from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError
 
 import config
-
 from ..logging import LOGGER
 
 
@@ -43,23 +43,33 @@ def install_req(cmd: str) -> Tuple[str, str, int, int]:
 
 def git():
     REPO_LINK = config.UPSTREAM_REPO
+
+    # Format the repo URL if token is present
     if config.GIT_TOKEN:
         GIT_USERNAME = REPO_LINK.split("com/")[1].split("/")[0]
         TEMP_REPO = REPO_LINK.split("https://")[1]
         UPSTREAM_REPO = f"https://{GIT_USERNAME}:{config.GIT_TOKEN}@{TEMP_REPO}"
     else:
         UPSTREAM_REPO = config.UPSTREAM_REPO
+
+    # Skip git operations if no .git directory exists (common in Railway/Heroku)
+    if not os.path.exists(".git"):
+        LOGGER(__name__).info("No .git directory found. Skipping git sync.")
+        return
+
     try:
         repo = Repo()
         LOGGER(__name__).info("Git Client Found [VPS DEPLOYER]")
-    except GitCommandError:
-        LOGGER(__name__).info(f"Invalid Git Command")
-    except InvalidGitRepositoryError:
-        repo = Repo.init()
-        if "origin" in repo.remotes:
-            origin = repo.remote("origin")
-        else:
-            origin = repo.create_remote("origin", UPSTREAM_REPO)
+    except (GitCommandError, InvalidGitRepositoryError):
+        LOGGER(__name__).warning("Invalid Git repository. Skipping git sync.")
+        return
+
+    try:
+        origin = repo.remote("origin")
+    except ValueError:
+        origin = repo.create_remote("origin", UPSTREAM_REPO)
+
+    try:
         origin.fetch()
         repo.create_head(
             config.UPSTREAM_BRANCH,
@@ -69,15 +79,8 @@ def git():
             origin.refs[config.UPSTREAM_BRANCH]
         )
         repo.heads[config.UPSTREAM_BRANCH].checkout(True)
-        try:
-            repo.create_remote("origin", config.UPSTREAM_REPO)
-        except BaseException:
-            pass
-        nrs = repo.remote("origin")
-        nrs.fetch(config.UPSTREAM_BRANCH)
-        try:
-            nrs.pull(config.UPSTREAM_BRANCH)
-        except GitCommandError:
-            repo.git.reset("--hard", "FETCH_HEAD")
+        origin.pull(config.UPSTREAM_BRANCH)
         install_req("pip3 install --no-cache-dir -r requirements.txt")
         LOGGER(__name__).info(f"Fetched Updates from: {REPO_LINK}")
+    except GitCommandError as e:
+        LOGGER(__name__).warning(f"Git fetch/pull error: {e}")
