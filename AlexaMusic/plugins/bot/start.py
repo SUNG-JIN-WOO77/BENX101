@@ -280,8 +280,8 @@ async def welcome(client, message: Message):
 @app.on_message(commandpro(["/alive", "Alexa"]))
 async def alive(client, message: Message):
     await message.reply_photo(
-        photo="https://graph.org/file/8ee7b11cbd7247d3da30e-89d29ea3b7ad64322a.jpg",
-        caption=f"""━━━━━━━━━━━━━━━━━━━━━━━━\n\n✪ ʜᴇʟʟᴏ, ɴᴏʙᴏᴅʏ ᴍᴜsɪᴄx ɪs ᴡᴏʀᴋɪɴɢ ᴀɴᴅ ғᴜɴᴄᴛɪᴏɴɪɴɢ ᴘʀᴏᴘᴇʀʟʏ\n✪ ᴛʜᴀɴᴋs ᴛᴏ ᴍʏ ᴏᴡɴᴇʀ ɴᴏʙᴏᴅʏ ᴋɴᴏᴡs 🌼 ..\n\n┏━━━━━━━━━━━━━━━━━┓\n┣★ ᴏᴡɴᴇʀ    : [𝐍ᴏʙᴏᴅʏ 𝐊ɴᴏᴡs ✘](https://t.me/nobody_knows_791)\n┣★ ᴜᴘᴅᴀᴛᴇs › : [𝐂ʜɪʟʟɪɴɢ 𝐅ʀɪᴇɴᴅs 💗🌖](https://t.me/dekh_kya_rha_kar_join)┓\n┣★ sᴜᴘᴘᴏʀᴛ › : [ᴄʜᴀɴɴᴇʟ](https://t.me/chilling_friends)\n┗━━━━━━━━━━━━━━━━━┛\n\n💞 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ\nᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](https://t.me/Nobody_knows_791) ᴍᴀᴋᴇ sᴜʀᴇ ᴛᴏ sᴛᴀʀ ᴏᴜʀ ᴘʀᴏᴊᴇᴄᴛ ...\n\n━━━━━━━━━━━━━━━━━━━━━━━━""",
+        photo="https://graph.org/file/6f3445543f297321e3c34-f22eb802d587212776.jpg",
+        caption=f"""━━━━━━━━━━━━━━━━━━━━━━━━\n\n✪ ʜᴇʟʟᴏ, ˹𝗕𝗘𝗡 メ мᴜѕɪᴄ𝐗˼ 🥂 ɪs ᴡᴏʀᴋɪɴɢ ᴀɴᴅ ғᴜɴᴄᴛɪᴏɴɪɴɢ ᴘʀᴏᴘᴇʀʟʏ\n✪ ᴛʜᴀɴᴋs ᴛᴏ ᴍʏ ᴏᴡɴᴇʀ ɴᴏʙᴏᴅʏ ᴋɴᴏᴡs 🌼 ..\n\n┏━━━━━━━━━━━━━━━━┓\n┣★ ᴏᴡɴᴇʀ    : [𝐍ᴏʙᴏᴅʏ 𝐊ɴᴏᴡs ✘](https://t.me/nobody_X_knows)\n┣★ ᴜᴘᴅᴀᴛᴇs › : [𝐂ʜɪʟʟɪɴɢ 𝐅ʀɪᴇɴᴅs 💗🌖](https://t.me/dekh_kya_rha_kar_join)┓\n┣★ sᴜᴘᴘᴏʀᴛ › : [ᴄʜᴀɴɴᴇʟ](https://t.me/chilling_friends)\n┗━━━━━━━━━━━━━━━━━┛\n\n💞 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ\nᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](https://t.me/Nobody_X_knows) ᴍᴀᴋᴇ sᴜʀᴇ ᴛᴏ sᴛᴀʀ ᴏᴜʀ ᴘʀᴏᴊᴇᴄᴛ ...\n\n━━━━━━━━━━━━━━━━━━━━━━━━""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("𝐂ʜɪʟʟɪɴɢ 𝐅ʀɪᴇɴᴅs 💗🌖", url=config.SUPPORT_GROUP)]]
         ),

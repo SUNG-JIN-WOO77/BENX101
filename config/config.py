@@ -18,12 +18,12 @@ from pyrogram import filters
 
 load_dotenv()
 
-API_ID = int(getenv("API_ID", "20397642"))
-API_HASH = getenv("API_HASH", "26e119ca056fd848986cf54dfcaccd59")
+API_ID = int(getenv("API_ID", "23882380"))
+API_HASH = getenv("API_HASH", "717f0a9521573f91562c2b3bd38f0b3c")
 
-BOT_TOKEN = getenv("BOT_TOKEN", "7666832423:AAHRx7n0tCdNBzo6_WZ-932yEE8vjmxvNyE")
+BOT_TOKEN = getenv("BOT_TOKEN", "7658998541:AAGGgkqQW9aznqgf16XgTZclC9yx8S2DmE8")
 
-MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://shibu07120:C4yYrkmTpsY2n9JT@cluster1.uxch0tb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1")
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://shibu07120:n0hOQJFqRr2CZ4Kj@cluster0.aepktkv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", "900"))
 
@@ -31,13 +31,13 @@ SONG_DOWNLOAD_DURATION = int(getenv("SONG_DOWNLOAD_DURATION_LIMIT", "180"))
 
 LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002821493163"))
 
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", " ˹𝐍ᴏʙᴏᴅʏ ꭙ мᴜѕɪᴄ𝐗 [🔮]˼ ")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", " ˹𝗕𝗘𝗡 メ мᴜѕɪᴄ𝐗˼ 🥂 ")
 
 OWNER_ID = int(getenv("OWNER_ID", "5947904339"))
 
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
-BOT_ID = getenv("BOT_ID", "7666832423")
+BOT_ID = getenv("BOT_ID", "7658998541")
 
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 
@@ -89,7 +89,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", "1073741824"))
 COOKIES = getenv("COOKIES", "https://batbin.me/striariaceae")
 # https://batbin.me
 
-STRING1 = getenv("STRING1", "BQG4ne8Aknu6KWDfSUnZTlSGLVK8o2C_OeBCx31EqKQoKyihzwDjSqKt9wEa4haYSfhPsAo3M2HD4TADMKj8XPeKhuMZBYWLTtrI4PV-rbxCxnjEKFYeW-OojbMTTUglN-HH0mSyzmkk10kpdyRnqJHoFmUmwjt4TcxLlG-W_TdkiyeEwxkd_Zxb-IhNrPs0sCMdueh7HfPr6YbA4jWocVBDTvEzSJw38mCK7OUY7LLU20qf7mfMQ0pc2HjrKzTa3pxk8TsnD7fAUMw2KCarBUxazNWfWMU3PAckg_YI1quH60KIz4q8P9UNzVt5O5ZLlNF3D73jewfDMLi9r1S0BaUJedKy2AAAAAHZOhqHAA")
+STRING1 = getenv("STRING1", "BQGipGAAQSDNXgvjLMRiWyatqsDDcCEAoDUJLKA0KwvWYAddd1cugFv1jHbvD97bGTZPkCRr4nVV6sMFyFezrCxSccZ6Rp_PW7HW2G_X2oGkCVN30Cq5RzeD9-NPw2DXZOFSU2UEC_e5XXkBlqqHYTj1Yw9LoB_N6ZTR_n1tfyOuMDatRnv8QDMAwsuDxuGlhFL-aplUIoDffBsREWLfAZ0rUT6fRODV8I0aHoMiFdK28fAtNQfZwWP9ftWM89Ygxa2bLHM0cV47PCade6Rog-7yTWdMoONDcdhNlawpm4OB1TebcDsFP9CoRU6IOMaALuUiObqfaIvH7edeA5nrjQ_9RIbs8AAAAAGxr4ctAA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
@@ -108,42 +108,42 @@ clean = {}
 autoclean = []
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://graph.org/file/2b5ed3250e31925ed2a45-aec17e2803d9c0188e.jpg"
+    "START_IMG_URL", "https://graph.org/file/a958ea69c1fdf4fe67270-04a10420c7b14aee2d.jpg"
 )
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
-    "assets/Ping.jpeg",
+    "https://files.catbox.moe/ab5lkb.jpeg",
 )
 
 PLAYLIST_IMG_URL = getenv(
     "PLAYLIST_IMG_URL",
-    "assets/Playlist.jpeg",
+    "https://files.catbox.moe/e6uus3.jpeg",
 )
 
 GLOBAL_IMG_URL = getenv(
     "GLOBAL_IMG_URL",
-    "assets/Global.jpeg",
+    "https://files.catbox.moe/e6uus3.jpeg",
 )
 
 STATS_IMG_URL = getenv(
     "STATS_IMG_URL",
-    "assets/Stats.jpeg",
+    "https://files.catbox.moe/e6uus3.jpeg",
 )
 
 TELEGRAM_AUDIO_URL = getenv(
     "TELEGRAM_AUDIO_URL",
-    "assets/Audio.jpeg",
+    "https://files.catbox.moe/v1p9q6.jpg",
 )
 
 TELEGRAM_VIDEO_URL = getenv(
     "TELEGRAM_VIDEO_URL",
-    "assets/Video.jpeg",
+    "https://files.catbox.moe/v1p9q6.jpg",
 )
 
 STREAM_IMG_URL = getenv(
     "STREAM_IMG_URL",
-    "assets/Stream.jpeg",
+    "https://files.catbox.moe/v1p9q6.jpg",
 )
 
 SOUNCLOUD_IMG_URL = getenv(
@@ -153,7 +153,7 @@ SOUNCLOUD_IMG_URL = getenv(
 
 YOUTUBE_IMG_URL = getenv(
     "YOUTUBE_IMG_URL",
-    "assets/Youtube.jpeg",
+    "https://files.catbox.moe/v1p9q6.jpg",
 )
 
 SPOTIFY_ARTIST_IMG_URL = getenv(
@@ -209,7 +209,7 @@ if GITHUB_REPO:
 
 
 if PING_IMG_URL:
-    if PING_IMG_URL != "assets/Ping.jpeg":
+    if PING_IMG_URL != "https://files.catbox.moe/ab5lkb.jpeg":
         if not re.match("(?:http|https)://", PING_IMG_URL):
             print(
                 "[ERROR] - Your PING_IMG_URL url is wrong. Please ensure that it starts with https://"
